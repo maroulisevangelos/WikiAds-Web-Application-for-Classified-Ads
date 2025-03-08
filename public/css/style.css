@@ -1,0 +1,322 @@
+/* Put your CSS stylesheets here */
+/*change the font family by using @font-face*/
+@font-face {
+    font-family :myfont;
+    src: url(fonts/BPmono.ttf);
+    font-style: normal;
+    font-weight: 70;
+}
+
+/* Reset some default styles for body and heading elements */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family :myfont;
+    
+}
+
+/*change the appearance of the ads*/
+
+.categories_container{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.category_ads_container{
+    img{
+        width: 300px; 
+        height: 300px;
+    }
+}
+
+.subcategory_ads_container{
+    img{
+        width: 400px; 
+        height: 400px;
+        padding: 18px;
+    } 
+}
+
+/*edit the header of the page*/
+header {
+    position: relative;
+    background-color: #460b0b;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    padding-top: 0px;
+    margin: 0px;
+    
+}
+
+/*create two red lines before and afte the title*/
+h2:after, h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+    background-color:#f8f8f8;
+}
+
+/*edit the navigation bar*/
+
+/*Navigations bar colour and width  */
+#navigation {
+    width: 100%;
+	background-color: #070000;
+    font-family :myfont;
+}
+
+#navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#navigation li {
+	float: left;
+    width: 130px;
+    font-size: 25px;
+}
+
+#navigation li a {
+	display: flex;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* When you hover over a link it changes colour  */
+#navigation li a:hover {
+	background-color: #0210cf;
+}
+
+/* Makes green colour the part of the navigation bar you are at*/
+#navigation .active {
+    background-color: #56ca08a4;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+#navigation li {
+    color:  #bbb;
+}
+  
+#navigation  li:last-child {
+    border-right: none;
+}
+
+
+/*edit the image in header*/
+header img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-family :myfont;
+}
+
+/*edit the title of page*/
+h2{
+    margin: 0;
+    padding: 0;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+    font-family :myfont;
+    align-items: center;
+    text-align: center;
+}
+
+/*edi the paragraphs*/
+p {
+    font-family :myfont;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+/* Visited links are red */
+a:visited {
+    color: rgb(155, 0, 0);
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+
+}
+
+
+/* Style the footer */
+footer {
+    width: 100%;
+    background-color: #460b0b;
+    color: white;
+    text-align: left;
+    position: relative;
+    font-family :myfont;
+    padding: 0;
+}
+
+/* Style the email links in the footer */
+footer a {
+    color: #0074D9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*grid by list used in categories*/
+.common-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+/*flex by list used in the display of adds*/
+
+.dl_ads {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #460b0b;
+}
+
+.dt_ads {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    background-image:url('images/background.jpg');
+    width: 100%;
+    text-align: center;
+}
+
+/*edit the flex-container*/
+
+.flex-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('images/background.jpg');
+}
+  
+.flex-container > div {
+    background-color: #460b0b;
+    height: 440px;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    line-height: 250px;
+    font-size: 60px;
+}
+
+/*edit the login form*/
+.login{
+    color: white;
+    float: right;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 30px;
+}
+
+body {
+    font-size: 16px;
+}
+
+/*edit the message which appears after a login trial*/
+#loginMessage {
+    color: black;
+    float: right;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 50px;
+}
+
+/*edit the description of the adds*/
+.desc {
+    width: auto; 
+    border: 1px;
+    word-break: keep-all;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*edit the appearance of price and number of the add*/
+.price{
+    word-spacing: 400px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*edit the name of the add*/
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+/*edit the table which contains the chars of the add */
+#char {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 380px;
+}
+#char tr{
+    border-bottom: 1px solid #ddd;
+    font-size: large;
+    font-weight: bold;
+}
+  
+#char td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/*becoming red when cursor is in a row*/
+#char tr:hover {
+    background-color: rgb(172, 29, 29);
+}
+
+/*becoming salmon when cursor is in a button*/
+button:hover{
+    cursor: pointer;
+    background-color: salmon;
+}
+
+/*make circled corners of input and buttons*/
+input,button {
+    border-radius: 8px;
+}
+
+/*change color to green when the input is valid*/
+input.success{
+    border-color: green;
+    color: green;
+}
+
+/*change color to red when input is invalid*/
+input.error{
+    border-color: red;
+    color: red;
+    font-weight: bold;
+    border: 3px solid;
+}
